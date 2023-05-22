@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- start header -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerolac</title>
+    <link rel="stylesheet" href="./main/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<!-- end header -->
+
+<body>
+    <!-- start header section -->
+    <header>
+        <div class="container header-block-1">
+
+            <div class="header-block-1-navbar1">
+                <ul class="block-1-navbar1-list1">
+                    <li><a href=""> HOMEOWNER </a></li>
+                    <li><a href=""> PROFESSIONAL </a></li>
+                    <li><a href=""> INDUSTRIAL</a></li>
+                </ul>
+                <ul class="block-1-navbar1-list2">
+                    <li><a href=""> Get in Touch </a></li>
+                    <li><a href=""> Find a Painter </a></li>
+                    <li><a href=""> Get to Know Us</a></li>
+                    <li><a href=""> Download Colour My Space </a></li>
+                    <li class="social">
+                        <a href=""> <i class="bi bi-facebook"></i></a>
+                        <a href=""> <i class="bi bi-instagram"></i></a>
+                        <a href=""> <i class="bi bi-twitter"></i></a>
+                        <a href=""> <i class="bi bi-youtube"></i></a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="header-block-1-navbar2">
+                <div class="navbar-box">
+                    <ul class="navbar-box-block1">
+                        <li class="menubar">
+                            <h1><i class="bi bi-list"></i></h1>
+                        </li>
+                        <li><img src="./images/logo.png" alt=""></li>
+                        <li>
+                            <h1>NEROLAC</h1>
+                        </li>
+                    </ul>
+                    <ul class="navbar-box-block2">
+                        <li><a href="">PAINTS & PRODUCTS</a></li>
+                        <li><a href="">NXTGEN SERVICES</a></li>
+                        <li><a href="">BLOGS</a></li>
+                        <li id="color"><a href="">COLOURS</a>
+                     
+                            <ul id="color-box">
+                                <li>Colour Catalogue</li>
+                                <li> Common Colours</li>
+                                <li> Healthy Home Paints</li>
+                            </ul>
+                        </li>
+
+                        <li><a href="">INSPIRATION</a></li>
+                        <li id="tools"><a href="" >TOOLS</a>
+                            <ul id="tool-box">
+                               <li> Paint Budget Calculator</li>
+                               <li> Colour Visualiser</li>
+                               <li> Colour Picker</li>
+                            </ul>
+                        </li>
+                        <li><a href="">STORE LOCATOR</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="container header-block-2">
+            <ul class="header-block2-navbar1">
+
+                <li><a href="">Home</a></li>
+                <li><a href=""><i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="">Tools</a></li>
+                <li><a href=""><i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="">Nerolac Knows
+                    </a></li>
+            </ul>
+
+            <ul class="header-block2-navbar2">
+
+                <li id="list1" onclick="oldpage1()">01</li>
+
+                <li onclick="nextpage1()" id="list2">02</li>
+
+                <li>03</li>
+
+                <li>04</li>
+
+                <li>05</li>
+
+                <li>06</li>
+
+                <li>07</li>
+            </ul>
+
+            <ul class="header-block2-navbar3">
+                <a href="">
+                    <li>Home Type</li>
+                </a>
+                <a href="">
+                    <li>Age Of Property</li>
+                </a>
+                <a href="">
+                    <li>Areay Of Concern</li>
+                </a>
+                <a href="">
+                    <li>Surface</li>
+                </a>
+                <a href="">
+                    <li>Problems</li>
+                </a>
+                <a href="">
+                    <li>Social Features</li>
+                </a>
+                <a href="">
+                    <li>Solutions</li>
+                </a>
+            </ul>
+
+
+        </div>
+
+        <div class="paint-logo"><img src="./images/paintlogo.png" alt=""></div>
+    </header>
+    <!-- end header section -->
+    <!-- start content section -->
+    <main>
+        <h2 id="headline">What's your home Like?</h2>
+        <div class="content-block">
+            <div class="content1">
+                <img src="./images/img1.jpg" alt="images" id="content1_img1" class="img-box">
+                <input type="radio" id="checkbox1" value="next-page" name="input-box" class="input1">
+                <div class="overlay">
+                    <p id="overlay-text1">VILLA</p>
+                </div>
+            </div>
+            <div class="content2">
+                <img src="./images/img2.jpg" alt="images" id="content1_img2" class="img-box">
+                <input type="radio" id="checkbox2" value="next-page" name="input-box" class="input2">
+                <div class="overlay">
+                    <p id="overlay-text2">APARTMENT</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="buttons">
+            <button onclick="oldpage1()">Previous</button>
+            <button onclick=" nextpage1(),nextpage2() ">Next</button>
+        </div>
+    </main>
+    <!-- end content section -->
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+    <!-- end javascript -->
+</body>
+
+</html>
